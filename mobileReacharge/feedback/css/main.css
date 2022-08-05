@@ -1,0 +1,133 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open sans';
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url(ios.jpg);
+    background-size:100%;
+    
+}
+body > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+.wrapper {
+  width: 700px;
+  background: #FFF;
+  border-radius:  10px;
+  box-shadow: 0 25px 70px rgba(0,0,0,.05);
+  overflow: hidden;
+}
+
+h1.title1 {
+  padding: 3px 0;
+  font-weight: normal;
+  font-size: 45px;
+  color: #fff;
+}
+
+h1.title {
+  padding: 15px 0;
+  font-weight: normal;
+  font-size:35px;
+  color:grey;
+}
+.banner{
+  background-size:cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  min-height: 670px;
+  }
+.banner.page-head {
+  min-height: 160px;
+}
+.header {
+  padding: 14px 0;
+}
+.logo {
+  float: left;
+  font-size:23px;
+  padding: 0 6px;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+  display: table;
+  content: " ";
+}
+.form {
+  width: 700px;
+}
+.myform {
+  background: #a9a9a9;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 25px
+}
+
+.myform label {
+  display: block;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.myform input {
+  border: 0;
+  outline: 0;
+  height: 50px;
+  background: #FFF;
+  width: 100%;
+  border-radius: 5px;
+  color: #a6dcef
+  font-weight: 700;
+  font-size: .9rem;
+  text-indent: 15px;
+  border: 2px solid transparent;
+  transition: border 250ms;
+}
+
+.full-width {
+  grid-column: -1 / 1;
+}
+
+.button {
+  grid-column: -1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 50px;
+  border-radius: 50px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: .9rem;
+  cursor: pointer;
+  background: #6b7279 ;
+}
+
+.button button:hover {
+  background: #31373b;
+}

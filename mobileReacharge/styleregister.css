@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+  padding: 34px;
+  max-width: 80%;
+  margin: auto;
+}
+.pic1{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.container h1,p{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Fredoka One', cursive;
+}
+.container h1{
+  font-size: 38px;
+}
+.container p{
+  font-size:25px;
+}
+p{
+  font-size: 30px;
+  font-family: cursive;
+}
+.message{
+  background-color: rgb(36, 214, 19);
+}
+input,textarea{
+  width: 80%;
+    margin: 11px;
+    padding: 9px;
+    font-size: 20px;
+    font-family: cursive;
+    border-width: 33px;
+    border: 4px double black;
+    border-radius: 12px;
+    outline: none;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn{
+  color: black;
+  background:#a9a9a9;
+  padding: 8px 12px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
+  outline: none;
+}
+  .det {
+    margin: 11px;
+    width: 80%;
+    padding: 9px;
+    border-width: thick;
+    border: 4px double black;
+    border-radius: 12px;
+    outline: none;
+    font-size: 20px;
+    color: black;
+}

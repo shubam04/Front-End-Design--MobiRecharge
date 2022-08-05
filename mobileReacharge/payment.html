@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment Method</title>
+<link href="payment/css/bootstrap.css" rel="stylesheet">
+<link href="payment/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="payment/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="banner page-head">
+	<div class="header">	
+			<div class="logo">
+			   <h1><a href="home.html"><i><img src="payment/images/cell.png" alt=" " /></i>Mobi-recharge</a></h1><!--logo will link to homepage-->
+			</div>
+			<div class="clearfix"> </div>
+	</div>
+</div>
+<div class="banner-bottom">
+	<div class="container">
+		<div class="view_plans">
+			<h4 class="view_title">Select Payment Method</h4>
+			<div class="section_room_single">
+				<h3>Transaction ID : 18529485017</h3>
+			</div>
+			<div class="clearfix"> </div>
+			<div id="verticalTab" class="resp-vtabs" style="display: block; width: 100%; margin: 0px;">
+					<div class="col-md-3 pay-left">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab">Debit Card</li>
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab">Credit Card</li>
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab">Net Banking</li>
+							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab">ATM</li>
+							<li class="resp-tab-item" aria-controls="tab_item-4" role="tab">IMPS</li>
+						</ul>
+					</div>
+					<div class="col-md-9 pay-right">
+						<div class="resp-tabs-container">
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-0"></h2>
+								<div class="resp-tab-content" aria-labelledby="tab_item-0">
+									<div class="vertical_post">
+										<form>
+											<h5>Enter Debit Card Number</h5>
+											<input type="text" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+											<div class="transaction">
+												<div class="tab-form-left user-form">
+													<h5>EXPIRATION</h5>
+														<ul>
+															<li>
+																<input type="number" class="text_box" value="6" min="1">	
+															</li>
+															<li>
+																<input type="number" class="text_box" value="1988" min="1">	
+															</li>	
+														</ul>
+												</div>
+												<div class="tab-form-right user-form-rt">
+													<h5>CVV NUMBER</h5>													
+													<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="single-check">
+												<input type="checkbox"  id="brand" value="">
+												<label for="brand"><span></span>Save this card for faster checkout.</label>
+												
+											</div>
+											<input type="submit" formaction="success.html" value="PAY NOW">
+											<input type="submit" formaction="feedback.html" value="CANCEL">
+										</form>
+									</div>
+								</div>
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"></h2>
+								<div class="resp-tab-content" aria-labelledby="tab_item-1">
+									<div class="vertical_post">
+										<form>
+											<h5>Enter Credit Card Number</h5>
+											<input type="text" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+											<div class="transaction">
+												<div class="tab-form-left user-form">
+													<h5>EXPIRATION</h5>
+														<ul>
+															<li>
+																<input type="number" class="text_box" value="6" min="1">	
+															</li>
+															<li>
+																<input type="number" class="text_box" value="1988" min="1">	
+															</li>	
+														</ul>
+												</div>
+												<div class="tab-form-right user-form-rt">
+													<h5>CVV NUMBER</h5>													
+													<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="single-check">
+												<input type="checkbox"  id="brand4" value="">
+												<label for="brand4"><span></span>Save this card for faster checkout.</label>
+												
+											</div>
+											<input type="submit" formaction="success.html" value="PAY NOW">
+											<input type="submit" formaction="feedback.html" value="CANCEL">
+										</form>
+									</div>
+								</div>
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"></h2>
+							<div class="new_posts resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="vertical_post">
+									<form>
+										<h5>Select From Popular Banks</h5>
+										<div class="swit-radio">								
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Syndicate Bank</label> </div></div>
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div></div>
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div></div>	
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>ICICI Bank</label> </div></div>	
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div></div>		
+											<div class="clearfix"></div>
+										</div>
+										<h5>Or SELECT OTHER BANK</h5>
+										<div class="section_room_pay">
+											<select id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="null">Indian Overseas Bank</option>
+												<option value="null">HDFC Bank</option>         
+												<option value="AX">Syndicate Bank</option>
+												<option value="AX">Deutsche Bank</option>
+												<option value="AX">Indian Bank</option>
+												<option value="AX">ING Vysya Bank</option>
+											</select>
+										</div>
+										<input type="submit" formaction="success.html" value="PAY NOW">
+										<input type="submit" formaction="feedback.html" value="CANCEL">
+									</form>
+								</div>
+							</div>
+							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-3"></h2>
+							<div class="new_posts resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="vertical_post">
+									<form>
+										<h5>Select From Popular Banks</h5>
+										<div class="swit-radio">								
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Syndicate Bank</label> </div></div>
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div></div>
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div></div>	
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>ICICI Bank</label> </div></div>	
+											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div></div>		
+											<div class="clearfix"></div>
+										</div>
+										<h5>Or SELECT OTHER BANk</h5>
+										<div class="section_room_pay">
+											<select id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="null">Indian Overseas Bank</option>
+												<option value="null">HDFC Bank</option>         
+												<option value="AX">Syndicate Bank</option>
+												<option value="AX">Deutsche Bank</option>
+												<option value="AX">Indian Bank</option>
+												<option value="AX">ING Vysya Bank</option>
+											</select>
+										</div>
+										<input type="submit" formaction="success.html" value="PAY NOW">
+										<input type="submit" formaction="feedback.html" value="CANCEL">
+									</form>
+								</div>
+							</div>	  
+							  <h2 class="resp-accordion" role="tab" aria-controls="tab_item-4"></h2><div class="new_posts resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="vertical_post">
+										<form>
+											<h5>Mobile Number</h5>
+											<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+											<div class="transaction">
+												<div class="tab-form-left user-form">
+													<h5>MMID</h5>
+														<ul>
+															<li class="mmid-grid">
+																<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+															</li>
+														</ul>
+												</div>
+												<div class="tab-form-right user-form-rt">
+													<h5>OTP</h5>													
+													<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<div class="single-check">
+												<input type="checkbox"  id="brand1" value="">
+												<label for="brand1"><span></span>Save this card for faster checkout.</label>
+												
+											</div>
+											<input type="submit" formaction="success.html" value="PAY NOW">
+											<input type="submit" formaction="feedback.html" value="CANCEL">
+										</form>
+									</div>
+							</div>	           
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<script src="payment/js/easyResponsiveTabs.js"></script>
+						<script type="text/javascript">
+							$(document).ready(function () {
+								$('#horizontalTab').easyResponsiveTabs({
+									type: 'default', //Types: default, vertical, accordion           
+									width: 'auto', //auto or any width like 600px
+									fit: true,   // 100% fit in a container
+									closed: 'accordion', // Start closed if in accordion view
+									activate: function(event) { // Callback function if tab is switched
+										var $tab = $(this);
+										var $info = $('#tabInfo');
+										var $name = $('span', $info);
+										$name.text($tab.text());
+										$info.show();
+									}
+								});
+								$('#verticalTab').easyResponsiveTabs({
+									type: 'vertical',
+									width: 'auto',
+									fit: true
+								});
+							});
+						</script>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<h2><a href="home.html">Mobi-recharge</a></h2><!--link to homepage-->
+		<p> © copyright 2020 | Designed by AMAN, AJIT AND SHUBAM </p>
+	</div>
+</div>
+<script src="payment/js/bootstrap.js"></script>
+</body>
+</html>
